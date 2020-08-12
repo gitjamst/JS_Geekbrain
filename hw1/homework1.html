@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        //1
+        let degree = prompt('Введите число в градусах:');
+        let message = degree + "° C = " + ((9 / 5) * degree + 32) + "° F";
+        alert(message);
+        //2
+        let admin;
+        let name;
+        name = "Василий";
+        admin = name;
+        console.log(admin);
+        //3
+        //Складываются 2 числа, затем при конкатенации получается строка 2010
+        let result = 10 + 10 + "10";
+        console.log(result);
+        //Здесь происходит 2 операции конкатенации 101010
+        result = 10 + "10" + 10;
+        console.log(result);
+        //Складываем 3 числа. Конечное строковое значение с унарным плюсом 
+        //приводится положительному числовому значению
+        result = 10 + 10 + +"10";
+        console.log(result);
+        //Здесь используется унарный минус. 
+        //На ноль делить нельзя -"" приводит к -0
+        //Результат -Infinity
+        result = 10 / -""
+        console.log(result);
+        //Результат - Infinity
+        console.log(10 / 0);
+        result = 10 / +"2,5"; //Это строка. Число с десятичным знаком пишется через точку 2.5
+        //Строка не может быть преобразована унарным плюсом в число, поэтому
+        //Получаем значение NaN. Если одно из чисел NaN, то и все выражение будет NaN
+        //Поэтому здесь значение result - NaN
+        console.log(result);
+
+        //4
+        let mode = "normal";
+        let my_valu3 = 102;
+        //let 3my_value3 = "102"; Имя переменной не может начинаться с цифры
+        let __hello__ = "world";
+        let $$$ = "money";
+        //let !0_world = true; Не может начинаться с восклицательного знака
+
+
+    </script>
+
+</body>
+
+</html>
